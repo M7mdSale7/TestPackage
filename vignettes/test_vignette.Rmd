@@ -1,0 +1,38 @@
+---
+title: "test_vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{test_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+# Overview
+This package is intended to extract information by year from different-years datasets from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+Functions in this package make file names by year, and extract and summarise data in them.
+
+# functions
+
+## make_filename
+This function takes a character or integer vector of length one of year as argument and returns the filename of accidents data corresponding to that year.
+```{r setup}
+TestPackage::make_filename("2013")
+```
+
+## fars_read
+This function takes a filename as a character vector of length 1, checks for the file's existence, and, if it exists, reads the data in file. Otherwise, fars_read throws an error.
+
+## fars_read_years
+This function takes a character or integer vector of years of any length, generates filename using **make_filename** and reads each file corresponding to the year using **fars_read**. For files that does not exists, it throws an error.
+
+## fars_summarize_years
+This function takes a character or integer vector of years of any length, uses **fars_read_years**, and returns *tbl_df* representing the summary of number of accients per month for each year.
+
+## fars_map_state
+This function takes a state number representing an American state and a year. It then plots the locations of accidents on map in a state.
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```

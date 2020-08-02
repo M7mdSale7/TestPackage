@@ -2,3 +2,5 @@
 
 language: R
 cache: packages
+before_isntall:
+  - Rscript -e 'install.packages("dplyr", lib="/home/travis/R-bin/lib/R/library/")'

@@ -4,3 +4,7 @@ language: R
 cache: packages
 before_isntall:
   - Rscript -e 'install.packages("dplyr", lib="/home/travis/R-bin/lib/R/library/")'
+  - Rscript -e 'install.packages("graphics", lib="/home/travis/R-bin/lib/R/library/")'
+  - Rscript -e 'install.packages("maps", lib="/home/travis/R-bin/lib/R/library/")'
+  - Rscript -e 'install.packages("readr", lib="/home/travis/R-bin/lib/R/library/")'
+  - Rscript -e 'install.packages("tidyr", lib="/home/travis/R-bin/lib/R/library/")'

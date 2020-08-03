@@ -19,7 +19,9 @@ extracts the \code{YEAR} and \code{MONTH} columns from each file. Throws a warni
 for the unfound file.
 }
 \examples{
+\donttest{
 fars_read_years(c(2013, 2014, 2015))
 fars_read_years(c("2013", "2014", "2015"))
+}
 
 }

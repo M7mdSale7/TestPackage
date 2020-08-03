@@ -18,7 +18,9 @@ is \code{MONTH} and the rest represent the year with each observation representi
 and number of accidents for each year. Shows a warning for each invalid year.
 }
 \examples{
+\donttest{
 fars_summarize_years(c(2013,2014,2015))
 fars_summarize_years(c("2013","2014","2015"))
+}
 
 }

@@ -19,7 +19,9 @@ Takes \code{state.num} and \code{year} as arguments and plots the locations of t
 during a year.
 }
 \examples{
+\donttest{
 fars_map_state(1,2013)
 fars_map_state("1", "2013")
+}
 
 }

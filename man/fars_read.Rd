@@ -17,12 +17,10 @@ Checks for existence of a .csv file. If it exists, \code{fars_read} returns the 
 an object of class "tbl_df". If the file does not exist, \code{fars_read} returns an error.
 }
 \examples{
-\donttest{
+\dontrun{
 fars_read("accident_2013.csv")
 fars_read("accident_2014.csv")
 fars_read("accident_2015.csv")
-}
- \dontrun{
 ##long paths
 read_csv("https://github.com/tidyverse/readr/raw/master/inst/extdata/mtcars.csv")
  }

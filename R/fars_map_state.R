@@ -13,7 +13,7 @@
 #' @export
 #'
 #' @examples
-#' \donttest{
+#' \dontrun{
 #' fars_map_state(1,2013)
 #' fars_map_state("1", "2013")
 #' }

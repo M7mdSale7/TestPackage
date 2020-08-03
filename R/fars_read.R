@@ -11,9 +11,11 @@
 #' @export
 #'
 #' @examples
+#' \donttest{
 #' fars_read("accident_2013.csv")
 #' fars_read("accident_2014.csv")
 #' fars_read("accident_2015.csv")
+#' }
 #'  \dontrun{
 #'	##long paths
 #'	read_csv("https://github.com/tidyverse/readr/raw/master/inst/extdata/mtcars.csv")

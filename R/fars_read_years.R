@@ -12,8 +12,10 @@
 #' @export
 #'
 #' @examples
+#' \donttest{
 #' fars_read_years(c(2013, 2014, 2015))
 #' fars_read_years(c("2013", "2014", "2015"))
+#' }
 #'
 #' @return This function returns a \code{list} with each element of the list containing the \code{YEAR}
 #'  and \code{MONTH} columns of each file. It returns NULL for a file it is not found.

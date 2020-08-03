@@ -13,8 +13,10 @@
 #' @export
 #'
 #' @examples
+#' \donttest{
 #' fars_map_state(1,2013)
 #' fars_map_state("1", "2013")
+#' }
 #'
 #' @return This function returns NULL and plots the locations of accidents on map in a state
 fars_map_state <- function(state.num, year) {
